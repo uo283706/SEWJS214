@@ -115,14 +115,14 @@ class Canvas{
 }
 
 
-class ArrayCiudades{
+class ListaCiudades{
 
     constructor(array){
         this.ciudades = array;
     }
 
 
-    mostrarTodas(){
+    verCiudades(){
 
         if(!this.executed){
 
@@ -149,5 +149,5 @@ var madrid = new MeteoJSON("Madrid");
 var barcelona = new MeteoJSON("Barcelona");
 var gijon = new MeteoJSON("Gijón")
 
-var clusterCiudades = new ArrayCiudades([oviedo,leon,madrid,barcelona,gijon]);
+var ciudades = new ListaCiudades([oviedo,leon,madrid,barcelona,gijon]);
 var can = new Canvas();
